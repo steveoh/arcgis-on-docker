@@ -18,7 +18,7 @@ docker-compose build
 ## Create and start a Container from the Image
 
 ```bash
- docker-compose up
+ docker-compose up -d
 ```
 
 ## Create a New Site
