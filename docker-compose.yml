@@ -6,6 +6,8 @@ services:
     image: "arcgis-server:10.4.1"
     volumes:
       - "./license:/license"
+      - "./arcgisserver:/arcgis/server/usr/directories"
+      - "./config-store:/arcgis/server/usr/config-store"
     build:
       context: .
       dockerfile: "Dockerfile"

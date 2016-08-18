@@ -37,8 +37,10 @@ USER $USER
 # install arcgis
 RUN /arcgis/ArcGISServer/Setup -m silent -l yes -d /
 
-# set volume up for provising file
+# set volumes up for provising file and directories
 VOLUME /license
+VOLUME /arcgis/server/usr/directories
+VOLUME /arcgis/server/usr/config-store
 
 # open ports
 EXPOSE 6080 6443 4001 4002 4004
