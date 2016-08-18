@@ -4,16 +4,18 @@ The following steps will bootstrap a CentOS [ArcGIS for Server](http://www.esri.
 
 ## ArcGIS Resources
 
-1. Download ArcGIS for Server from [my.esri.com](https://my.esri.com/#/downloads) and rename it to `ags.tar.gz`.
-2. Download your license file `XXXX.prvc` from the [provisioning](https://my.esri.com/#/provisioning/417547) section and place it in `/license/`
+1. Download ArcGIS for Server from [my.esri.com](https://my.esri.com/#/downloads) and rename it to `ags.tar.gz` and place it along side the dockerfile.
+2. Download your license file from the [provisioning](https://my.esri.com/#/provisioning/417547) section and place it in the `/license/` folder.
 
-## Building the Image
+## Build the Image
+
+This step is only necessary once.
 
 ```bash
 docker-compose build
 ```
 
-## Create a Container from the Image
+## Create and start a Container from the Image
 
 ```bash
  docker-compose up
@@ -22,3 +24,8 @@ docker-compose build
 ## Create a New Site
 
 Navigate to <http://localhost:6080/arcgis/manager>:
+
+## Roadmap
+
+1. Persist config store and data so container state is saved.
+1. Bootstrap a container with services similar to how the license file thing works.
