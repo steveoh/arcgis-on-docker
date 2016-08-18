@@ -1,0 +1,21 @@
+version: "2"
+
+services:
+  arcgis-server:
+    container_name: "arcgis-server-10.4.1"
+    image: "arcgis-server:10.4.1"
+    volumes:
+      - "./license:/license"
+    build:
+      context: .
+      dockerfile: "Dockerfile"
+    ulimits:
+      nproc: 25059
+      nofile:
+        soft: 65535
+        hard: 65535
+    ports:
+      - "127.0.0.1:6080:6080"
+      - "127.0.0.1:80:6443"
+    stdin_open: true
+    tty: true
