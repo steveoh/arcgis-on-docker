@@ -49,4 +49,4 @@ VOLUME /arcgis/server/usr/config-store
 EXPOSE 6080 6443 4001 4002 4004
 
 # start the server
-ENTRYPOINT /arcgis/authorize-and-start.sh; /bin/bash
+ENTRYPOINT /arcgis/authorize-and-start.sh &&  /bin/bash
