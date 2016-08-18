@@ -35,3 +35,6 @@ Navigate to <http://localhost:6080/arcgis/manager>:
 
 1. Persist config store and data so container state is saved.
 1. Bootstrap a container with services similar to how the license file thing works.
+
+
+Hat tip to [Mansour](https://twitter.com/mraad) for a great [reference](https://github.com/mraad/docker-arcgis) for how to get going with all of this.
