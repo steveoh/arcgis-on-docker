@@ -37,6 +37,9 @@ USER $USER
 # install arcgis
 RUN /arcgis/ArcGISServer/Setup -m silent -l yes -d /
 
+# clean up install
+RUN rm -rf /ArcGISServer
+
 # set volumes up for provising file and directories
 VOLUME /license
 VOLUME /arcgis/server/usr/directories
