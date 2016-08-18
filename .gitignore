@@ -1,2 +1,4 @@
 *.prvc
 *.tar.gz
+arcgisserver/
+config-store/
