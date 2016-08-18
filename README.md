@@ -21,6 +21,12 @@ docker-compose build
  docker-compose up -d
 ```
 
+## Stop the container
+
+```bash
+docker-compose down
+```
+
 ## Create a New Site
 
 Navigate to <http://localhost:6080/arcgis/manager>:
